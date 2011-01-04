@@ -1,0 +1,46 @@
+
+.business{
+  background: url(../images/buildings_03.png);
+}
+
+#small_store{
+  background-position: -25px -40px;
+  width: 120px;
+  height: 91px;
+  z-index: 4;
+}
+
+#large_store{
+  background-position: -169px -40px;
+  width: 192px;
+  height: 92px;
+  z-index: 4;
+}
+
+#small_factory{
+  background-position: -15px -180px;
+  width: 120px;
+  height: 84px;
+  z-index: 4;
+}
+
+#large_factory{
+  background-position: -169px -166px;
+  width: 192px;
+  height: 99px;
+  z-index: 4;
+}
+
+#small_building{
+  background-position: -30px -342px;
+  width: 93px;
+  height: 74px;
+  z-index: 4;
+}
+
+#large_building{
+  background-position: -186px -300px;
+  width: 107px;
+  height: 113px;
+  z-index: 4;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="http://use.typekit.com/dnj4asn.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <link href='css/site.css' media='screen' rel='stylesheet' type='text/css' /> 
+    <link href='css/sprite.css' media='screen' rel='stylesheet' type='text/css' /> 
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+  </head>
+  <body>
+    <div id="title" style="display: none;">
+      <h1><a href="#" id="logo">Innovatis</a></h1>
+    </div>
+    <div class="fadeIn" id="machine_container">
+      <div class="entity" id="machine"></div>
+      <div class="entity" id="conveyor">
+        <div id="belt-left"></div>
+        <div id="belt-right"></div>
+      </div>
+      <div class="hidden business" id="small_store"></div>
+      <div class="hidden" id="green_glow"></div>
+      <div id="left-shadow"></div>
+      <div id="right-shadow"></div>
+    </div>
+    <div class="fadeIn" id="reflection">
+      <div id="left-shadow"></div>
+      <div id="right-shadow"></div>
+      <div class="pitch_catch">
+        <div class="pitch">
+          <h2> Innovative Information Solutions</h2>
+          <p>Using a powerful combination of proven online marketing strategies and innovative software solutions, Innovatis Inc. Works closely with small-medium businesses, creasing revenuew and operational efficiencies, yielding a tangible <b>Return On Investment.</b></p>
+        </div>
+        <div class="catch">
+          <a href="#">Contact Us Now</a>
+        </div>
+        <br class="clear"/>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="info">
+        <div itemscope itemtype="http://www.data-vocabulary.org/Organization/">
+          <h2 itemprop="name">Innovatis Inc</h2>
+          <ul itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+            <li itemprop="street-address">1801-201 Portage Avenue</li>
+            <li>Canwest Global Place<li>
+            <li><span itemprop="locality">Winnipeg</span>, <span itemprop="region">Manitoba</span> <span itemprop="country">Canada</span></li>
+            <li><span itemprop="posta-code">R3B 3K6</span><li>
+          </ul>
+          <dl>
+            <dt>Phone:</dt>
+            <dd itemprop="tel"><a href="call:12049268548">1 (204) 926-8548</a></dd>
+            <dt>Fax: </dt>
+            <dd itemprop="fax"><a href="fax:12049268501" >1 (204) 926-8501</a></dd>
+          </dl>
+        </div>
+        <div itemscope itemtype="http://www.data-vocabulary.org/Person/" class="person">
+          <h3 itemprop="name">Glen Buhler</h3>
+          <cite itemprop="title">President &amp; CEO</cite>
+          <a href="mailto:gbuhler@innovatisinc.ca">gbuhler@innovatisinc.ca</a>
+        </div>
+        <div itemscope itemtype="http://www.data-vocabulary.org/Person/" class="person">
+          <h3 itemprop="name">Lee Waltham</h3>
+          <cite itemprop="title">Sales & Marketing Manager</cite>
+          <a href="mailto:lwaltham@innovatisinc.ca">lwaltham@innovatisinc.ca</a>
+        </div>
+      </div>
+      <div class="form">
+        <h2> How can we help?</h2>
+        <form>
+          <div class"inputs">
+            <div class="input string required">
+              <cite >required</cite>
+              <label for="name">Name</label>
+              <input required name="name"/>
+            </div>
+            <div class="input string required">
+              <label for="company">Company</label>
+              <input name="company"/>
+            </div>
+          </div>
+            <div class="input string required">
+              <cite >required</cite>
+              <label for="phone">Phone</label>
+              <input required type="phone" name="phone"/>
+            </div>
+            <div class="input string required">
+              <cite >required</cite>
+              <label for="email">E-mail</label>
+              <input required type="email" name="email"/>
+            </div>
+            <div class="textarea text required">
+              <label for="additional_information">Additional Information</label>
+              <textarea name="additional_information"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

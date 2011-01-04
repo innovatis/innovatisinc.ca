@@ -1,0 +1,314 @@
+html, body, div, span, a, img,
+h1, h2, h3, h4, h5, h6, hgroup, p,
+dl, dialog, dt, dd, ol, ul, li,
+abbr, acronym, address, b, big, blockquote,
+cite, code, del, dfn, em, i, ins, kbd, pre, q,
+samp, tt, var, small, strong, sub, sup,
+object, iframe, form, fieldset, label, legen/imagesd,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, footer, header, nav, section,
+figure, menu, time, mark, audio, video {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  white-space: normal;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  outline: 0px;
+  background: transparent; }
+
+textarea, input, select {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+  white-space: normal;
+  text-align: left;
+  margin: 0;
+  padding: 0; }
+
+html{
+  background: black;
+  font-family: Arial;
+  font-weight: 400;
+  color: #6c6f73;
+  text-shadow: 0 0 2px black;
+}
+a{
+  color: #6c6f73;
+}
+
+dl dt{
+  float: left;
+}
+.clear {
+  clear: both;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+}
+
+h2{
+  color: white;
+  text-shadow: 0 2px 5px black;
+}
+
+#title{
+  background: url(../images/menu_background.png) repeat-x;
+  position: fixed;
+  height: 73px;
+  width: 100%;
+  top: 0;
+  z-index: 6;
+}
+
+#title h1{
+  height: 18px;
+  padding-top: 30px;
+  display: block;
+  position: static;
+  width: 932px;
+  margin: 0 auto;
+  text-indent: -999em;
+}
+
+#logo{
+  background: url(../images/logo.png) no-repeat;
+  display: block;
+  margin: 0 auto;
+  width: 118px;
+  height: 18px;
+}
+
+.business{
+  background: url(../images/buildings_03.png);
+  position: absolute;
+  z-index: 4;
+  top: 310px;
+}
+
+#large_business{
+  background: url(../images/Large-Business.png) no-repeat;
+  width: 192px;
+  top: 300px;
+  left: 0px;
+  height: 111px;
+  z-index: 4;
+  position: absolute;
+}
+
+#machine_container{
+  position: relative;
+  background: url(../images/gen/images/backdrop.jpg) center top no-repeat;
+  width: 1000px;
+  height: 451px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#machine{
+  background: url(../images/box.png);
+  height: 191px ; 
+  width: 208px ;
+  position: absolute;
+  left: 398px;
+  top:  257px;
+  z-index: 5;
+}
+
+#conveyor{
+  background: url(../images/gen/images/conveyor.jpg) center no-repeat;
+  width: 1000px;
+  position: absolute;
+  height: 87px;
+  top: 365px;
+}
+
+#belt{
+  height: 45px;
+  width: 758px;
+}
+
+#belt-left{
+  background: url(../images/belts-left.png) left repeat-x;
+  height: 59px;
+  width: 498px;
+  top: 0px;
+  position: absolute;
+  left: 0px;
+}
+
+#belt-right{
+  background: url(../images/belts-right.png) left repeat-x;
+  height: 59px;
+  width: 498px;
+  top: 0px;
+  position: absolute;
+  left: 498px;
+}
+
+.fadeIn, .hidden{ 
+  display: none
+}
+
+#green_glow {
+  background: url(../images/green_glow.png);
+  width: 516px;
+  height: 196px;
+  left: 241px;
+  top: 224px;
+  position: absolute;
+}
+
+#reflection{
+  background: url(../images/gen/images/reflection.jpg) no-repeat;
+  background-position: -100px 0;
+  width: 1000px;
+  margin: 0 auto;
+  height: 241px;
+  position: relative;
+  
+}
+#left-shadow{
+  background: url(../images/left-shadow.png) repeat-y;
+  height: 100%;
+  width: 200px;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+#right-shadow{
+  background: url(../images/right-shadow.png) repeat-y;
+  height: 100%;
+  width: 200px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+}
+#contact{
+  background: url(../images/gen/images/contact.jpg) top center no-repeat;
+  height: 631px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#contact .info, #contact .form {
+}
+
+#contact .info dl dt{
+  width: 55px;
+}
+#contact .info ul{
+  padding-left: 0;
+}
+#contact .info h1, #contact .info h3{
+  margin: 0px;
+}
+#contact .person{
+  margin-bottom: 10px;
+}
+#contact .person cite{
+  display: block;
+}
+.pitch_catch{
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.pitch{
+  width: 400px;
+  float: left;
+}
+.catch{
+  float: left;
+  text-align: center;
+  width: 200px;
+}
+
+.pitch h2{
+  font-size: 24px;
+  font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.pitch p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top:5px;
+}
+
+.pitch b{
+  font-weight: 400px;
+}
+
+#contact .info{
+  width: 300px;
+  padding: 20px 0 40px 100px;
+  float: left;
+}
+
+#contact .info ul{
+  list-style: none;
+}
+
+#contact .form{
+  width: 550px;
+  float: left;
+  padding: 20px 0px 0px 0px
+}
+
+#contact .form .input{
+  float: left;
+  height: 70px;
+  width: 250px;
+  padding-right: 25px;
+}
+#contact .form .input cite{
+  float: right;
+}
+#contact .form h2{
+}
+#contact .form form label{
+  display: block;
+  font-weight: 500;
+  text-shadow: none;
+}
+
+#contact .form form input{
+  width: 250px;
+  height: 30px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  background: #060606;
+  border: 1px solid #393f41;
+  color: #76797a;
+  padding: 3px 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a1c20), to(#060606));
+  background: -moz-linear-gradient(top,  #1a1c20,  #060606);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a1c20', endColorstr='#060606');
+}
+
+#contact .form form textarea{
+  border-radius: 7px;
+  background: #060606;
+  border: 1px solid #393f41;
+  color: #76797a;
+  width: 525px;
+  height: 200px;
+  padding: 1px 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a1c20), to(#060606));
+  background: -moz-linear-gradient(top,  #1a1c20,  #060606);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a1c20', endColorstr='#060606');
+}
