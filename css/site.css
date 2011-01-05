@@ -196,6 +196,16 @@ h2{
   height: 631px;
   width: 1000px;
   margin: 0 auto;
+  display: none;
+}
+
+#contact_us_now{
+  background: url(../images/Contact-Us-Now-Button.png) no-repeat;
+  display: block;
+  height: 57px;
+  width: 196px;
+  text-indent: -999em;
+  margin-top: 30px;
 }
 
 #contact .info, #contact .form {
@@ -217,7 +227,7 @@ h2{
   display: block;
 }
 .pitch_catch{
-  width: 700px;
+  width: 600px;
   margin: 0 auto;
   padding-top: 60px;
 }
@@ -311,4 +321,15 @@ h2{
   background: -webkit-gradient(linear, left top, left bottom, from(#1a1c20), to(#060606));
   background: -moz-linear-gradient(top,  #1a1c20,  #060606);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a1c20', endColorstr='#060606');
+}
+
+#back_to_top{
+  display: block;
+  position: relative;
+  float: right;
+  background: url(../images/Back-to-the-Top.png) no-repeat;
+  width:159px;
+  height:49px;
+  margin-right: 70px;
+  text-indent: -999em;
 }

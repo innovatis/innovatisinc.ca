@@ -69,12 +69,27 @@ function throb(max,fcn){
   };
 
 $(function(){
-    $('.fadeIn').fadeIn(2000,function(){
-      $('#belt-left,#belt-right').fadeIn(2000,function(){
-      $('.business').fadeIn(function(){
-      });
+  $('.fadeIn').fadeIn(2000,function(){
+    $('#belt-left,#belt-right').fadeIn(2000,function(){
+      $('.business').fadeIn();
     });
   });  
+  
+  $('#contact_us_now').toggle(function(){
+    $('#contact').stop().fadeIn(function(){
+      $(window).scrollTo($('#contact'),1000);
+    });
+    return false;
+  },function(){
+    $(window).scrollTo(0,1000);
+    $('#contact').stop().fadeOut(1100);
+    return false;
+  });
+
+  $('#back_to_top').click(function(){
+    $(window).scrollTo(0,1000);
+    return false;
+  });
 
   animateBelt();
   animateBusiness();
