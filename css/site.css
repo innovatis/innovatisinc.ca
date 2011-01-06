@@ -39,7 +39,7 @@ html{
   text-shadow: 0 0 2px black;
 }
 a{
-  color: #6c6f73;
+  color: #8e9195;
 }
 
 dl dt{
@@ -48,8 +48,8 @@ dl dt{
 .clear {
   clear: both;
 }
-h1,h2,h3,h4,h5,h6{
-  font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Myriad Pro","myriad-pro-1","myriad-pro-2",sans-serif;
 }
 
 h2{
@@ -214,17 +214,37 @@ h2{
 #contact .info dl dt{
   width: 55px;
 }
-#contact .info ul{
-  padding-left: 0;
+#contact .info dl {
+  color:#b1b3b6;
+  font-family:'Lucida Grande', arial, helvetica, sans-serif;
+  font-size:13px;
+  line-height:24px;
 }
-#contact .info h1, #contact .info h3{
-  margin: 0px;
+#contact .info dt {
+    font-size:14px;
 }
-#contact .person{
-  margin-bottom: 10px;
+#contact .info h1, #contact .info h3 {
+    color: #AAAAAA;
+    margin: 0;
+}
+#contact .person {
+  font-family:'Lucida Grande', arial, helvetica, sans-serif;
+  font-size:14px;
+  padding:19px 0;
+  border-top:1px solid #404040;
+  width:190px
+}
+#contact .person h3 {
+  font-size:16px;
+  font-family:'Lucida Grande', arial, helvetica, sans-serif;
 }
 #contact .person cite{
   display: block;
+  font-size:13px;
+  margin-bottom:4px;
+}
+#contact .person a {
+    font-size:12px;
 }
 .pitch_catch{
   width: 600px;
@@ -264,18 +284,23 @@ h2{
 
 #contact .info{
   width: 300px;
-  padding: 20px 0 40px 100px;
+  padding: 30px 0 40px 100px;
   float: left;
 }
 
 #contact .info ul{
   list-style: none;
+  padding-left: 0;
+  font-family:'Lucida Grande', arial, helvetica, sans-serif;
+  font-size:14px;
 }
-
+#contact .info ul li {
+    margin:3px 0;
+}
 #contact .form{
   width: 550px;
   float: left;
-  padding: 20px 0px 0px 0px
+  padding: 0px;
 }
 
 #contact .form .input{
@@ -283,18 +308,35 @@ h2{
   height: 70px;
   width: 250px;
   padding-right: 25px;
+  margin-bottom:18px;
 }
 #contact .form .input cite{
   float: right;
+  font-size:11px;
+  margin-top:6px;
+  color: rgba(0,0,0,.8);
+  text-shadow:none;
+  padding:2px 9px;
+  background:#5c5e61;
+  -moz-border-radius-topleft:4px;
+  -moz-border-radius-topright:4px;
+  -webkit-border-top-left-radius:4px;
+  -webkit-border-top-left-radius:4px;
+  border-top-left-radius:4px;
+  border-top-right-radius:4px;
 }
-#contact .form h2{
+#contact .form h2 {
+  margin: 0 0 25px 0;
 }
 #contact .form form label{
   display: block;
-  font-weight: 500;
-  text-shadow: none;
+  font-family:'Lucida Grande', arial, helvetica, sans-serif;
+  text-shadow: 0 1px #111;
+  margin-bottom:6px;
+  padding-left:3px;
+  font-size:14px;
+  color:#8e9195;
 }
-
 #contact .form form input{
   width: 250px;
   height: 30px;
@@ -333,3 +375,4 @@ h2{
   margin-right: 70px;
   text-indent: -999em;
 }
+

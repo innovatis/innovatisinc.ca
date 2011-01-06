@@ -18,8 +18,10 @@ function throb(max,fcn){
   function animateBusiness(start,stop){
     var offset   = -100,
         business = $('.business'),
-        start    = start || 'small_store',
-        stop     = stop  || 'large_store';
+        start    = start || buildings[buildingIndex].small,
+        stop     = stop  || buildings[buildingIndex].large;
+
+    buildingIndex = (buildingIndex + 1)%3;
 
     business.attr('id',start);
 
@@ -53,6 +55,22 @@ function throb(max,fcn){
 
   window.beltOn = true,
   window.houseOn = true;
+  window.buildingIndex = 0;
+  window.buildings = [
+    {
+      small: "small_store",
+      large: "large_store",
+    },
+    {
+      small: "small_factory",
+      large: "large_factory"
+    },
+    {
+      small: "small_building",
+      large: "large_building"
+    }
+
+  ];
 
   function animateBelt(){
     var counter  = 0,
