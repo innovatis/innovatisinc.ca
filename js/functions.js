@@ -94,7 +94,7 @@ $(function(){
   });  
   
   $('#contact_us_now').click(function(){
-    $('#contact').stop().fadeIn(function(){
+    $('#contact').stop().slideDown(1000,function(){
       $(window).scrollTo($('#contact'),1000);
     });
     return false;
@@ -106,7 +106,7 @@ $(function(){
 
   $('#form-close').click(function(){
     $(window).scrollTo(0,1000);
-    $('#contact').stop().fadeOut(1100)
+    $('#contact').stop().slideUp(1100)
     return false;
   });
 
