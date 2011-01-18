@@ -167,7 +167,7 @@ h2{
   background: url(../images/gen/images/reflection.jpg) -14px top no-repeat;
   width: 1014px;
   margin: 0 auto;
-  height: 243px;
+  height: 245px;
   position: relative;
   
 }
@@ -199,7 +199,7 @@ h2{
   display: block;
   border:none;
   float: right;
-  margin: 10px 112px 0px 0px;
+  margin: 25px 112px 0px 0px;
 }
 #contact #submit_form:hover {
   background-position: 0px -35px;
@@ -208,9 +208,9 @@ h2{
   background-position: 0px -70px;
 }
 #contact{
-  background: url(../images/form-background.jpg) top -65px no-repeat;
+  background: url(../images/form-background.jpg) top center no-repeat;
   height: 631px;
-  width: 1000px;
+  width: 1144px;
   margin: 0 auto;
   display: none;
 }
@@ -343,7 +343,7 @@ h2{
 
 #contact .info{
   width: 250px;
-  padding: 10px 0 40px 100px;
+  padding: 10px 0 40px 240px;
   float: left;
 }
 
