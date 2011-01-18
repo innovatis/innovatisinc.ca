@@ -93,7 +93,7 @@ $(function(){
     });
   });  
   
-  $('#contact_us_now').toggle(function(){
+  $('#contact_us_now').click(function(){
     $('#contact').stop().fadeIn(function(){
       $(window).scrollTo($('#contact'),1000);
     });
@@ -104,8 +104,9 @@ $(function(){
     return false;
   });
 
-  $('#back_to_top').click(function(){
+  $('#form-close').click(function(){
     $(window).scrollTo(0,1000);
+    $('#contact').stop().fadeOut(1100)
     return false;
   });
 

@@ -36,7 +36,6 @@ html{
   font-family: Arial;
   font-weight: 400;
   color: #6c6f73;
-  text-shadow: 0 0 2px black;
 }
 a{
   color: #8e9195;
@@ -165,11 +164,10 @@ h2{
 }
 
 #reflection{
-  background: url(../images/gen/images/reflection.jpg) no-repeat;
-  background-position: -100px 0;
-  width: 1000px;
+  background: url(../images/gen/images/reflection.jpg) -14px top no-repeat;
+  width: 1014px;
   margin: 0 auto;
-  height: 241px;
+  height: 243px;
   position: relative;
   
 }
@@ -193,8 +191,24 @@ h2{
   right: 0;
 }
 
+#contact #submit_form{
+  background: url(../images/button-submit.png) no-repeat;
+  width: 131px;
+  height: 35px;
+  text-indent: -999em;
+  display: block;
+  border:none;
+  float: right;
+  margin: 10px 112px 0px 0px;
+}
+#contact #submit_form:hover {
+  background-position: 0px -35px;
+}
+#contact #submit_form:active {
+  background-position: 0px -70px;
+}
 #contact{
-  background: url(../images/gen/images/contact.jpg) top center no-repeat;
+  background: url(../images/form-background.jpg) top -65px no-repeat;
   height: 631px;
   width: 1000px;
   margin: 0 auto;
@@ -202,42 +216,19 @@ h2{
 }
 
 #contact_us_now{
-  background: #ff2266;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff2266),color-stop(1, #881030));
-  background: -moz-linear-gradient(top, #ff2266, #881030);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#ff2266, endColorStr=#881030);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff2266, endColorstr=#881030)";
+  text-indent: -999em;
+  background: url(../images/button-contact.png) no-repeat;
+  width: 156px;
+  height: 43px;
   display: block;
-  height: 57px;
-  width: 196px;
-  margin-top: 30px;
-  line-height: 62px;
-  -moz-box-shadow: 0px 1px 2px #000;
-  -webkit-box-shadow: 0px 1px 2px #000;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #aa0033;
-  color:white;
-  text-shadow: 0 1px 2px #661030;
-  font-size: 22px;
-  font-weight: bold;
-  font-family: "Myriad Pro","myriad-pro-1","myriad-pro-2",sans-serif;
-  text-decoration: none;
 }
 
-#contact_us_now:hover{
-  background: #ff3b71;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff3d73),color-stop(1, #881133));
-  background: -moz-linear-gradient(top, #ff3d73, #881133);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#ff3b71, endColorStr=#881133);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff3b71, endColorstr=#881133)";
+#contact_us_now:hover {
+  background-position: 0px -43px;
 }
 
-#contact_us_now:active{
-  margin-top: 31px;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
+#contact_us_now:active {
+  background-position: 0px -86px;
 }
 
 #contact .info, #contact .form {
@@ -245,15 +236,38 @@ h2{
 
 #contact .info dl dt{
   width: 55px;
+  line-height: 17px;
+  height: 22px;
+}
+#contact .info dl dt.icon-phone{
+  background: url(../images/icon-phone.gif) no-repeat;
+  height:16px; 
+  width:17px;
+  text-indent: -999em;
+}
+
+#contact .info dl dt.icon-fax{
+  background: url(../images/icon-fax.gif) no-repeat;
+  height:16px; 
+  width:17px;
+  text-indent: -999em;
 }
 #contact .info dl {
   color:#b1b3b6;
   font-family:'Lucida Grande', arial, helvetica, sans-serif;
   font-size:13px;
-  line-height:24px;
+  font-weight: bold;
 }
 #contact .info dt {
     font-size:14px;
+}
+
+#contact .info dd{
+  margin-bottom: 10px;
+}
+#contact .info dd a{
+  color: white;
+  text-decoration: none;
 }
 #contact .info h1, #contact .info h3 {
     color: #AAAAAA;
@@ -263,23 +277,26 @@ h2{
   font-family:'Lucida Grande', arial, helvetica, sans-serif;
   font-size:14px;
   padding:19px 0;
-  border-top:1px solid #404040;
   width:190px
+  text-shadow: none;
 }
 #contact .person h3 {
   font-size:16px;
   font-family:'Lucida Grande', arial, helvetica, sans-serif;
+  text-shadow: none;
 }
 #contact .person cite{
   display: block;
   font-size:13px;
-  margin-bottom:4px;
+  color: #1a1b1a;
+  text-shadow: none;
 }
 #contact .person a {
     font-size:12px;
+  color: #c1c3c0;
 }
 .pitch_catch{
-  width: 600px;
+  width: 750px;
   margin: 0 auto;
   padding-top: 60px;
 }
@@ -287,19 +304,29 @@ h2{
 .pitch{
   width: 400px;
   float: left;
+  text-shadow: 0px 0px 2px black;
 }
 .catch{
   float: left;
-  text-align: center;
-  width: 200px;
+  width: 250px;
+  margin-left: 100px;
+}
+
+.catch h2{
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+  font-weight: 700px;
+  margin-top: 18px;
+  color: #a2ec71;
 }
 
 .pitch h2{
   font-size: 24px;
-  font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
   font-weight: 700;
+  font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
   color: white;
-  margin: 0;
   padding: 0;
 }
 
@@ -315,16 +342,25 @@ h2{
 }
 
 #contact .info{
-  width: 300px;
-  padding: 30px 0 40px 100px;
+  width: 250px;
+  padding: 10px 0 40px 100px;
   float: left;
+}
+
+#contact .info #form-logo{
+  background: url(../images/form-logo.png) no-repeat;
+  text-indent: -999em;
+  height: 31px;
+  width: 168px;
 }
 
 #contact .info ul{
   list-style: none;
+  margin-top: 40px;
   padding-left: 0;
   font-family:'Lucida Grande', arial, helvetica, sans-serif;
   font-size:14px;
+  color: #1b1c1b;
 }
 #contact .info ul li {
     margin:3px 0;
@@ -333,6 +369,7 @@ h2{
   width: 550px;
   float: left;
   padding: 0px;
+  margin-top: 34px;
 }
 
 #contact .form .input{
@@ -348,7 +385,6 @@ h2{
   font-size:11px;
   margin-top:6px;
   color: rgba(0,0,0,.8);
-  text-shadow:none;
   padding:2px 9px;
   background:#5c5e61;
   -moz-border-radius-topleft:4px;
@@ -358,7 +394,8 @@ h2{
   border-top-left-radius:4px;
   border-top-right-radius:4px;
   position: relative;
-  margin-top: 7px;
+  margin-top: 4px;
+  color: black;
 }
 
 #contact .form .error.input cite{
@@ -367,9 +404,17 @@ h2{
   background: -moz-linear-gradient(top, #ff3d73, #881133);
   background: -webkit-gradient(linear, left top, left bottom, from(#ff3d73), to(#881133));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3d73', endColorstr='#881133');
-  
+}
+#contact .form .input cite.error{
+  display: none;
+}
+#contact .form .error.input cite.error{
+  display: block
 }
   
+#contact .form .error.input cite.normal{
+  display: none;
+}
 #contact .form h2 {
   margin: 0 0 25px 0;
 }
@@ -377,7 +422,7 @@ h2{
   display: block;
   font-family:'Lucida Grande', arial, helvetica, sans-serif;
   text-shadow: 0 1px #111;
-  margin-bottom:6px;
+  margin-bottom:3px;
   padding-left:3px;
   font-size:14px;
   color:#8e9195;
@@ -392,10 +437,6 @@ h2{
   border: 1px solid #393f41;
   color: #76797a;
   padding: 3px 5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1a1c20), to(#060606));
-  background: -moz-linear-gradient(top,  #1a1c20,  #060606);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a1c20', endColorstr='#060606');
-
 }
 
 #contact .form form .input.error input{
@@ -408,21 +449,26 @@ h2{
   border: 1px solid #393f41;
   color: #76797a;
   width: 525px;
-  height: 200px;
+  height: 100px;
   padding: 1px 5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1a1c20), to(#060606));
-  background: -moz-linear-gradient(top,  #1a1c20,  #060606);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a1c20', endColorstr='#060606');
 }
 
-#back_to_top{
+#form-close{
   display: block;
   position: relative;
   float: right;
-  background: url(../images/Back-to-the-Top.png) no-repeat;
-  width:159px;
-  height:49px;
-  margin-right: 70px;
+  background: url(../images/form-close-tab.png) no-repeat;
+  background-position: 0px 0px;
+  width:50px;
+  height:39px;
+  margin-right: 50px;
   text-indent: -999em;
+}
+#form-close:hover {
+  background-position: 0px -39px;
+}
+
+#form-close:active {
+  background-position: 0px -78px;
 }
 
