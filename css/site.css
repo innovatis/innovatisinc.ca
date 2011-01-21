@@ -529,6 +529,11 @@ h4{
   margin:20px 0 0 0;
   font-size:15px;
 }
+
+#footer ul li{
+  font-weight: normal;
+}
+
 #footer ul#form-address li{
   color:#848f84;  
 }
