@@ -76,6 +76,7 @@ h2{
 }
 
 #logo{
+  background: url(../images/logo.png) no-repeat;
   display: block;
   margin: 0 auto;
   width: 118px;
@@ -88,7 +89,6 @@ h2{
   z-index: 4;
   top: 310px;
 }
-
 #large_business{
   background: url(../images/Large-Business.png) no-repeat;
   width: 192px;
@@ -98,7 +98,6 @@ h2{
   z-index: 4;
   position: absolute;
 }
-
 #machine_container{
   position: relative;
   background: url(../images/gen/images/backdrop.jpg) center top no-repeat;
@@ -107,7 +106,6 @@ h2{
   margin: 0 auto;
   overflow: hidden;
 }
-
 #machine{
   background: url(../images/box.png);
   height: 191px ; 
@@ -117,7 +115,6 @@ h2{
   top:  257px;
   z-index: 5;
 }
-
 #conveyor{
   background: url(../images/gen/images/conveyor.jpg) center no-repeat;
   width: 1000px;
@@ -125,12 +122,10 @@ h2{
   height: 87px;
   top: 365px;
 }
-
 #belt{
   height: 45px;
   width: 758px;
 }
-
 #belt-left{
   background: url(../images/belts-left.png) left repeat-x;
   height: 59px;
@@ -139,7 +134,6 @@ h2{
   position: absolute;
   left: 0px;
 }
-
 #belt-right{
   background: url(../images/belts-right.png) left repeat-x;
   height: 59px;
@@ -148,11 +142,9 @@ h2{
   position: absolute;
   left: 498px;
 }
-
 .fadeIn, .hidden{ 
   display: none
 }
-
 #green_glow {
   background: url(../images/green_glow.png);
   width: 516px;
@@ -161,14 +153,12 @@ h2{
   top: 224px;
   position: absolute;
 }
-
 #reflection{
   background: url(../images/gen/images/reflection.jpg) -14px top no-repeat;
   width: 1014px;
   margin: 0 auto;
   height: 245px;
   position: relative;
-  
 }
 #left-shadow{
   background: url(../images/left-shadow.png) repeat-y;
@@ -179,7 +169,6 @@ h2{
   left: 0;
   top: 0;
 }
-
 #right-shadow{
   background: url(../images/right-shadow.png) repeat-y;
   height: 100%;
@@ -189,7 +178,6 @@ h2{
   top: 0;
   right: 0;
 }
-
 #contact #submit_form{
   background: url(../images/button-submit.png) no-repeat;
   width: 131px;
@@ -198,7 +186,7 @@ h2{
   display: block;
   border:none;
   float: right;
-  margin: 25px 112px 0px 0px;
+  margin: 25px 188px 0px 0px;
 }
 #contact #submit_form:hover {
   background-position: 0px -35px;
@@ -207,13 +195,12 @@ h2{
   background-position: 0px -70px;
 }
 #contact{
-  background: url(../images/form-background.jpg) top center no-repeat;
+  background: url(../images/form-background.jpg) top left no-repeat;
   height: 481px;
   width: 1144px;
   margin: 0 auto;
   display: none;
 }
-
 #contact_us_now{
   text-indent: -999em;
   background: url(../images/button-contact.png) no-repeat;
@@ -221,18 +208,14 @@ h2{
   height: 43px;
   display: block;
 }
-
 #contact_us_now:hover {
   background-position: 0px -43px;
 }
-
 #contact_us_now:active {
   background-position: 0px -86px;
 }
-
 .info, #contact .form {
 }
-
 .info dl dt{
   width: 55px;
   line-height: 17px;
@@ -244,7 +227,6 @@ h2{
   width:17px;
   text-indent: -999em;
 }
-
 .info dl dt.icon-fax{
   background: url(../images/icon-fax.gif) no-repeat;
   height:16px; 
@@ -260,10 +242,8 @@ h2{
 .info dt {
     font-size:14px;
 }
-
 .info dd{
   margin-bottom: 10px;
-  margin-left: 24px;
 }
 .info dd a{
   color: white;
@@ -276,7 +256,7 @@ h2{
 .person {
   font-family:'Lucida Grande', arial, helvetica, sans-serif;
   font-size:14px;
-  padding:19px 0;
+  padding:8px 0;
   width:190px
   text-shadow: none;
 }
@@ -315,10 +295,10 @@ h2{
 }
 
 h2{
-  font-size: 24px;
+  font-size: 22px;
   margin: 0;
   padding: 0;
-  font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+  font-family: "Myriad Pro", Myriad Web", "Myriad", myriad-pro-1","myriad-pro-2",sans-serif;
   font-weight: 700px;
   margin-top: 18px;
   color: #a2ec71;
@@ -328,52 +308,68 @@ h4{
   font-weight: 400;
   text-shadow: 0px 0px 2px black;
   color: white;
-
 }
 .pitch h2{
   color: white;
 }
-
 .pitch p, .catch p{
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   margin-top:5px;
 }
-
 .pitch b{
   font-weight: 400px;
 }
-
 #contact .info{
   width: 250px;
-  padding: 10px 0 40px 240px;
+  padding: 10px 0 40px 145px;
   float: left;
 }
+#contact .info .person {
+  width:192px;
+  padding:16px 0 20px 30px;
+  border-bottom: 1px solid rgba(0,0,0,.3);
+  border-top:1px solid rgba(255,255,255,.1);
+  background:rgba(0,0,0,.1);
+}
+#contact #contact-info {
+    padding-left:32px;
+}
 .info #footer-logo{
-  background: url(../images/form-logo.png) no-repeat;
+  background: url(../images/form-logo.png) -4px 0 no-repeat;
   text-indent: -999em;
   height: 31px;
   width: 168px;
+  margin-bottom:20px;
 }
-
-.info #form-logo{
-  background: url(../images/form-logo.png) no-repeat;
-  text-indent: -999em;
-  height: 31px;
-  width: 168px;
-}
-
 #contact .info ul{
   list-style: none;
-  margin-top: 40px;
-  padding-left: 0;
+  margin-top: 20px;
+  padding-left:0;  
   font-family:'Lucida Grande', arial, helvetica, sans-serif;
-  font-size:14px;
-  color: #1b1c1b;
+  font-size:12px;
+  color: #abafab;
 }
 #contact .info ul li {
-    margin:3px 0;
+  margin:3px 0;
+}
+#contact .info .person h3 {
+  color:#dcdfdc;
+  -text-shadow:0 1px #595959;
+  font-size:15px;
+}
+#contact .info .person cite {
+  color:#8c8f8c;
+  font-weight:normal;
+    font-size:12px;
+}
+#contact .info .person a {
+    color:#bbbfbb;
+}
+#contact .info .person a:hover {
+    color:#cbcfcb;
+    text-shadow:0 1px #444;
 }
 #contact .form{
   width: 550px;
@@ -381,7 +377,6 @@ h4{
   padding: 0px;
   margin-top: 34px;
 }
-
 #contact .form .input{
   float: left;
   height: 70px;
@@ -389,7 +384,6 @@ h4{
   padding-right: 25px;
   margin-bottom:18px;
 }
-
 #contact .form .input cite{
   float: right;
   font-size:11px;
@@ -407,7 +401,6 @@ h4{
   margin-top: 4px;
   color: black;
 }
-
 #contact .form .error.input cite{
   color: white;
   background:#ff3d73;
@@ -421,7 +414,6 @@ h4{
 #contact .form .error.input cite.error{
   display: block
 }
-  
 #contact .form .error.input cite.normal{
   display: none;
 }
@@ -449,11 +441,9 @@ h4{
   color: #76797a;
   padding: 3px 5px;
 }
-
 #contact .form form .input.error input{
   border: 1px solid #881133;
 }
-
 #contact .form form textarea{
   border-radius: 7px;
   background: #060606;
@@ -463,26 +453,29 @@ h4{
   height: 100px;
   padding: 1px 5px;
 }
-
 #form-close{
   display: block;
-  position: relative;
-  float: right;
+  position:absolute;
+  right: 268px;
   background: url(../images/form-close-tab.png) no-repeat;
   background-position: 0px 0px;
   width:50px;
   height:39px;
-  margin-right: 50px;
   text-indent: -999em;
+  -moz-box-shadow: 0 2px 4px #000;
+  -webkit-box-shadow: 0 2px 4px #000;
+  box-shadow: 0 2px 4px #000;
+  cursor:pointer;
 }
 #form-close:hover {
   background-position: 0px -39px;
 }
-
 #form-close:active {
   background-position: 0px -78px;
+  -moz-box-shadow: 0 1px 2px #000;
+  -webkit-box-shadow: 0 1px 2px #000;
+  box-shadow: 0 1px 2px #000;
 }
-
 #footer{
   background: url(../images/footer.png) top center no-repeat;
   width: 1200px;
@@ -493,35 +486,62 @@ h4{
 }
 .column{
   float: left;
-  width: 300px;
+  width: 330px;
 }
 .column.first{
-  margin-left: 218px;
+  margin-left: 177px;
 }
-
 #footer ul{
   list-style: none;
-  margin: 0;
+  margin: 0 0 22px 0;
   padding: 0;
 }
 #footer ul li{
   font-size: 14px;
-  line-height: 18px;
-  font-family: Arial;
-  text-shadow: 0px 0px 1px black;
+  line-height: 22px;
+  font-family: "Myriad Pro","myriad-pro-1","myriad-pro-2",arial, helvetica, sans-serif;
+  color:#505450;
 }
-
+#footer ul{
+  list-style: none;
+  margin: 0 0 22px 0;
+  padding: 0;
+}
+#footer ul li{
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Myriad Pro","myriad-pro-1","myriad-pro-2",arial, helvetica, sans-serif;
+  color:#606460;
+  letter-spacing:.02em;
+}
+#footer h2 {
+  font-weight:normal;
+  letter-spacing:.04em;
+  color:#6fa15f;
+}
 #footer h4{
-  color: #b8b9bc;
-  margin-bottom: 2px;
-  text-shadow: none;
-
+  color: #868b86;
+  font-size:15px;
+  margin:12px 0 3px 0;
+  letter-spacing:.02em;
 }
-
+#footer ul#form-address {
+  margin:20px 0 0 0;
+  font-size:15px;
+}
+#footer ul#form-address li{
+  color:#848f84;  
+}
 #footer .info{
-  color: #b9bab9;
+  color: #677067;
+}
+#footer .person {
+  margin:0;
+}
+#footer .info .person cite{
+  color: #505450;
+}
+#footer .info .person a {
+  color:#677067;
 }
 
-#footer .info .person cite{
-  color: #b9bab9;
-}
