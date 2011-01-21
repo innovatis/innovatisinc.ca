@@ -455,8 +455,8 @@ h4{
 }
 #form-close{
   display: block;
-  position:absolute;
-  right: 268px;
+  float: right;
+  margin-right: 140px;
   background: url(../images/form-close-tab.png) no-repeat;
   background-position: 0px 0px;
   width:50px;
