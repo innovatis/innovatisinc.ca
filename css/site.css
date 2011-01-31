@@ -178,6 +178,14 @@ h2{
   top: 0;
   right: 0;
 }
+
+::-webkit-input-placeholder {
+  color: #313131;
+}
+:-moz-placeholder {
+  color: #313131;
+  font-weight: normal;
+}
 #contact #submit_form{
   background: url(../images/button-submit.png) no-repeat;
   width: 131px;
@@ -478,7 +486,7 @@ h4{
 }
 #footer{
   background: url(../images/footer.png) top center no-repeat;
-  width: 1200px;
+  width: 1000px;
   height: 400px;
   margin: 0 auto;
   padding-top: 20px;
@@ -486,10 +494,10 @@ h4{
 }
 .column{
   float: left;
-  width: 330px;
+  width: 290px;
 }
 .column.first{
-  margin-left: 177px;
+  margin-left: 100px;
 }
 #footer ul{
   list-style: none;
@@ -529,7 +537,6 @@ h4{
   margin:20px 0 0 0;
   font-size:15px;
 }
-
 #footer ul li{
   font-weight: normal;
 }
@@ -552,3 +559,4 @@ h4{
 .organization{
   margin-left: 30px;
 }
+
