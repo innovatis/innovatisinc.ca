@@ -21,6 +21,8 @@ figure, menu, time, mark, audio, video {
   outline: 0px;
   background: transparent; }
 
+a:focus{outline: none}
+
 textarea, input, select {
   font-family: inherit;
   font-size: 100%;
@@ -100,8 +102,9 @@ h2{
 }
 #machine_container{
   position: relative;
-  background: url(../images/gen/images/backdrop.jpg) center top no-repeat;
-  width: 1000px;
+  left: 0px;
+  background: url(../images/gen/images/backdrop.jpg) -95px top no-repeat;
+  width: 1014px;
   height: 451px;
   margin: 0 auto;
   overflow: hidden;
@@ -111,16 +114,17 @@ h2{
   height: 191px ; 
   width: 208px ;
   position: absolute;
-  left: 398px;
+  left: 400px;
   top:  257px;
   z-index: 5;
 }
 #conveyor{
   background: url(../images/gen/images/conveyor.jpg) center no-repeat;
-  width: 1000px;
+  width: 1014px;
   position: absolute;
   height: 87px;
   top: 365px;
+  left: 0px;
 }
 #belt{
   height: 45px;
@@ -149,12 +153,12 @@ h2{
   background: url(../images/green_glow.png);
   width: 516px;
   height: 196px;
-  left: 241px;
+  left: 246px;
   top: 224px;
   position: absolute;
 }
 #reflection{
-  background: url(../images/gen/images/reflection.jpg) -14px top no-repeat;
+  background: url(../images/gen/images/reflection.jpg) -20px top no-repeat;
   width: 1014px;
   margin: 0 auto;
   height: 245px;
@@ -194,7 +198,7 @@ h2{
   display: block;
   border:none;
   float: right;
-  margin: 25px 188px 0px 0px;
+  margin: 25px 145px 0px 0px;
 }
 #contact #submit_form:hover {
   background-position: 0px -35px;
@@ -203,9 +207,9 @@ h2{
   background-position: 0px -70px;
 }
 #contact{
-  background: url(../images/form-background.jpg) top left no-repeat;
+  background: url(../images/form-background.jpg) -43px top no-repeat;
   height: 481px;
-  width: 1144px;
+  width: 1014px;
   margin: 0 auto;
   display: none;
 }
@@ -331,7 +335,7 @@ h4{
 }
 #contact .info{
   width: 250px;
-  padding: 10px 0 40px 145px;
+  padding: 10px 0 40px 102px;
   float: left;
 }
 #contact .info .person {
@@ -383,7 +387,7 @@ h4{
   width: 550px;
   float: left;
   padding: 0px;
-  margin-top: 34px;
+  margin-top: -5px;
 }
 #contact .form .input{
   float: left;
@@ -464,7 +468,7 @@ h4{
 #form-close{
   display: block;
   float: right;
-  margin-right: 140px;
+  margin-right: 70px;
   background: url(../images/form-close-tab.png) no-repeat;
   background-position: 0px 0px;
   width:50px;
@@ -486,9 +490,10 @@ h4{
 }
 #footer{
   background: url(../images/footer.png) top center no-repeat;
-  width: 1000px;
+  width: 984px;
   height: 400px;
   margin: 0 auto;
+  padding-left: 30px;
   padding-top: 20px;
   color: #7f7e7e;
 }

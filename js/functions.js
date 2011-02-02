@@ -32,7 +32,7 @@ function animateBusiness(newStart,newStop){
 
       business.css({left:offset+"px"});
 
-      if(offset < 410 || offset > 410 && offset < 1000){
+      if(offset < 440 || offset > 440 && offset < 1000){
         setTimeout(arguments.callee,30);
       }else if(offset < 1000){
         beltOn = false;
@@ -41,14 +41,14 @@ function animateBusiness(newStart,newStop){
           throb(3,function(){
             business.attr('id',stop);
             // funky transition
-            offset = 410;
+            offset = 440;
             beltOn = true;
             continueAnimation();
           });
         }else{
           setTimeout(function(){
             business.attr('id',stop);
-            offset = 410;
+            offset = 440;
             beltOn = true;
             continueAnimation();
           },3000);
@@ -130,7 +130,7 @@ $(function(){
 
   $('#contact_us_now').click(function(){
     $('#contact').stop().slideDown(1000,function(){
-      $(window).scrollTo($('#contact'),1000);
+      $(window).scrollTo($('#contact'),1000,{axis: 'y'});
     });
     return false;
   },function(){

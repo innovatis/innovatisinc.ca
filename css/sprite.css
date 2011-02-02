@@ -35,12 +35,14 @@
   background-position: -30px -342px;
   width: 91px;
   height: 74px;
+  margin-top: 20px;
   z-index: 4;
 }
 
 #large_building{
   background-position: -186px -300px;
-  width: 91px;
+  width: 107px;
   height: 113px;
+  margin-top: -18px;
   z-index: 4;
 }
