@@ -99,6 +99,7 @@ var Innovatis = Innovatis || {};
 (function(){
 
   Innovatis.form = form = {};
+  form.mailPath = '/_strobe/proxy/empty-water-430.heroku.com/mail';
 
   form.validate = function(){
     var element = $(this),
@@ -150,9 +151,13 @@ $(function(){
 
   $('#contact-form').submit(function(e){
     var element = $(this);
-    if(!Innovatis.form.validateAll()){
-      e.preventDefault();
+    if(Innovatis.form.validateAll()){
+      $('.form,.actions').fadeOut();
+      $.post(Innovatis.form.mailPath,element.serialize(), function(){
+      });
     }
+
+    return false;
   });
   $('#contact-form input').keyup(Innovatis.form.validate);
 });
