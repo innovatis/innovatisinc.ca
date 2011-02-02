@@ -131,7 +131,7 @@ h2{
   width: 758px;
 }
 #belt-left{
-  background: url(../images/belts-left.png) left repeat-x;
+  background: url(../images/belts-left.png) top center repeat-x;
   height: 59px;
   width: 498px;
   top: 0px;
@@ -139,7 +139,7 @@ h2{
   left: 0px;
 }
 #belt-right{
-  background: url(../images/belts-right.png) left repeat-x;
+  background: url(../images/belts-right.png) top center repeat-x;
   height: 59px;
   width: 498px;
   top: 0px;
