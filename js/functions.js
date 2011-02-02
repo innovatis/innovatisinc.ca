@@ -152,7 +152,9 @@ $(function(){
   $('#contact-form').submit(function(e){
     var element = $(this);
     if(Innovatis.form.validateAll()){
-      $.post(Innovatis.form.mailPath,element.serialize());
+      $('.form,.actions').fadeOut();
+      $.post(Innovatis.form.mailPath,element.serialize(), function(){
+      });
     }
 
     return false;
