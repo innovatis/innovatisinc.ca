@@ -130,7 +130,7 @@ $(function(){
   });
 
   $('#contact_us_now').click(function(){
-    $('#contact').stop().slideDown(1000,function(){
+    $('#contact').slideDown(1000,function(){
       $(window).scrollTo($('#contact'),1000,{axis: 'y'});
       $('.input cite').fadeIn();
     });
