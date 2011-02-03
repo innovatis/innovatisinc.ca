@@ -123,11 +123,14 @@ var Innovatis = Innovatis || {};
 })();
 
 $(function(){
-  $('.fadeIn').fadeIn(2000,function(){
-    $('#belt-left,#belt-right').fadeIn(2000,function(){
-      $('.business').fadeIn();
+
+  setTimeout(function(){
+    $('.fadeIn').fadeIn(2000,function(){
+      $('#belt-left,#belt-right').fadeIn(2000,function(){
+        $('.business').fadeIn();
+      });
     });
-  });
+  },1000);
 
   $('#contact_us_now').click(function(){
     $('#contact').slideDown(1000,function(){
