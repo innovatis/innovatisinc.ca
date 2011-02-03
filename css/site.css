@@ -580,42 +580,6 @@ h4{
 }
 
 
-
-
-/*ASDFASDFASDFA*/
-@import url("reset.css");
-@import url("core.css");
-
-/*TEXT*/
-
-h1,h2,h3,h4,h5,h6 {
-    font-family:'Hevletica Neue', 'Myriad Pro', Helvetica, Arial, sans-serif;
-    font-weight:600px;
-    line-height:1em;
-    margin-bottom:.2em;
-}
-h1 {color:rgb(16,96,205);font-size:1.6em;}
-h2 {font-size:1.4em;}
-h3 {font-size:1.2em;}
-h4 {font-size:1em;}
-h5 {font-size:.8em;}
-h6 {font-size:.6em;}
-
-p {
-    font-family:'Hevletica Neue', 'Myriad Pro', Helvetica, Arial, sans-serif;
-    margin:0 0 15px 0;
-    line-height:1.5em;
-    font-size:1em;
-    color:rgb(65,65,65);
-}
-em {
-    font-style:italic;
-    font-weight:400;
-    color:#aaa;
-    line-height:1em;
-    float:right;
-}
-
 /*BUTTONS*/
 
 a.button {
