@@ -25,6 +25,13 @@
   -padding-right: 10px;
 }
 
+#belt-left{
+  -background: url(../images/belts-left.png) top center repeat-x;
+}
+#belt-right{
+  -background: url(../images/belts-right.png) top center repeat-x;
+}
+
 #belt-left,#belt-right, #left-shadow, #right-shadow, #machine, #footer-logo,#form-close, #contact_us_now, #submit_form , #small_store, #large_store, #small_factory, #large_factory, #small_building, #large_building
 {
   -behavior: url(/css/iepngfix.htc);
