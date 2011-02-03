@@ -8,6 +8,9 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <link href='css/site.css'       media='screen' rel='stylesheet' type='text/css' /> 
     <link href='css/sprite.css'     media='screen' rel='stylesheet' type='text/css' /> 
+    <!--[if IE]>
+      <link href='css/ie.css'       media='screen' rel='stylesheet' type='text/css' /> 
+    <![endif]-->
     <script type="text/javascript"  src="js/jquery.min.js"></script>
     <script type="text/javascript"  src="js/jquery.scrollTo-min.js"></script>
     <script type="text/javascript"  src="js/functions.js"></script>
@@ -16,31 +19,33 @@
     <div id="title" style="display: none;">
       <h1><a href="#" id="logo">Innovatis</a></h1>
     </div>
-    <div class="fadeIn" id="machine_container">
-      <div class="entity" id="machine"></div>
-      <div class="entity" id="conveyor">
-        <div id="belt-left"></div>
-        <div id="belt-right"></div>
+    <div id="fancy_holder">
+      <div class="fadeIn" id="machine_container">
+        <div class="entity" id="machine"></div>
+        <div class="entity" id="conveyor">
+          <div id="belt-left"></div>
+          <div id="belt-right"></div>
+        </div>
+        <div class="hidden business" id="small_store"></div>
+        <div class="hidden" id="green_glow"></div>
+        <div id="left-shadow"></div>
+        <div id="right-shadow"></div>
       </div>
-      <div class="hidden business" id="small_store"></div>
-      <div class="hidden" id="green_glow"></div>
-      <div id="left-shadow"></div>
-      <div id="right-shadow"></div>
-    </div>
-    <div class="fadeIn" id="reflection">
-      <div id="left-shadow"></div>
-      <div id="right-shadow"></div>
-      <div class="pitch_catch">
-        <div class="pitch">
-          <h2> Innovative Information Solutions</h2>
-          <p>Using a powerful combination of proven online marketing strategies and innovative software solutions, Innovatis Inc. works closely with small-medium businesses, increasing revenue and operational efficiencies, yielding a tangible <b>Return On Investment.</b></p>
+      <div class="fadeIn" id="reflection">
+        <div id="left-shadow"></div>
+        <div id="right-shadow"></div>
+        <div class="pitch_catch">
+          <div class="pitch">
+            <h2> Innovative Information Solutions</h2>
+            <p>Using a powerful combination of proven online marketing strategies and innovative software solutions, Innovatis Inc. works closely with small-medium businesses, increasing revenue and operational efficiencies, yielding a tangible <b>Return On Investment.</b></p>
+          </div>
+          <div class="catch">
+            <h2>Take the First Step!</h2>
+            <p> Innovatis is your first step towards a more <b>productive</b>, <b>profitable</b> and <b>efficient business.</b></p>
+            <a id="contact_us_now" href="#">Contact Us Now</a>
+          </div>
+          <br class="clear"/>
         </div>
-        <div class="catch">
-          <h2>Take the First Step!</h2>
-          <p> Innovatis is your first step towards a more <b>productive</b>, <b>profitable</b> and <b>efficient business.</b></p>
-          <a id="contact_us_now" href="#">Contact Us Now</a>
-        </div>
-        <br class="clear"/>
       </div>
     </div>
     <div id="contact">
@@ -51,10 +56,12 @@
           <dl>
             <dt class="icon-phone" >Phone:</dt>
             <dd itemprop="tel">
-              <a href="call:12049268548">1 (204) 926-8548</a></dd>
+              <a href="call:12049268548">1 (204) 926-8548</a>
+            </dd>
             <dt class="icon-fax">Fax: </dt>
             <dd itemprop="fax">
-              <a href="fax:12049268501" >1 (204) 926-8501</a></dd>
+              <a href="fax:12049268501" >1 (204) 926-8501</a>
+            </dd>
           </dl>
           <ul id='form-address' itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
             <li itemprop="street-address">1801-201 Portage Avenue</li>
@@ -89,7 +96,7 @@
               <label for="name">Name</label>
               <input required placeholder="Your Name" name="name"/>
             </div>
-            <div class="input string required">
+            <div class="input string">
               <label for="company">Company</label>
               <input name="company" placeholder="Company Co."/>
             </div>
@@ -112,7 +119,7 @@
             </div>
           </div>
           <div class="actions">
-            <input id="submit_form" type="submit" value="Submit"></input>
+            <input id="submit_form" type="submit"></input>
           </div>
         </form>
       </div>

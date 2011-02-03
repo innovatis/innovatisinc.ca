@@ -15,51 +15,50 @@ function throb(max,fcn){
   })();
 }
 
-function animateBusiness(newStart,newStop){
-  var offset   = -100,
-      business = $('.business'),
-      start    = newStart || buildings[buildingIndex].small,
-      stop     = newStop  || buildings[buildingIndex].large;
+  function animateBusiness(newStart,newStop){
+    var offset   = -100,
+        business = $('.business'),
+        start    = newStart || buildings[buildingIndex].small,
+        stop     = newStop  || buildings[buildingIndex].large;
 
-  buildingIndex = (buildingIndex + 1)%3;
+    buildingIndex = (buildingIndex + 1)%3;
 
-  business.attr('id',start);
+    business.attr('id',start);
 
-  business.css({left:offset}).fadeIn(function(){
-    (function(){
-      offset += 3;
-      var continueAnimation = arguments.callee;
+    business.css({left:offset}).fadeIn(function(){
+      (function(){
+        offset += 3;
+        var continueAnimation = arguments.callee;
 
-      business.css({left:offset+"px"});
+        business.css({left:offset+"px"});
 
-      if(offset < 440 || offset > 440 && offset < 1000){
-        setTimeout(arguments.callee,30);
-      }else if(offset < 1000){
-        beltOn = false;
+        if(offset < 440 || offset > 440 && offset < 1000){
+          setTimeout(arguments.callee,30);
+        }else if(offset < 1000){
+          beltOn = false;
 
-        if($.support.opacity){
-          throb(3,function(){
-            business.attr('id',stop);
-            // funky transition
-            offset = 440;
-            beltOn = true;
-            continueAnimation();
-          });
-        }else{
-          setTimeout(function(){
-            business.attr('id',stop);
-            offset = 440;
-            beltOn = true;
-            continueAnimation();
-          },3000);
+          if($.support.opacity){
+            throb(3,function(){
+              business.attr('id',stop);
+              // funky transition
+              offset = 440;
+              beltOn = true;
+              continueAnimation();
+            });
+          }else{
+            setTimeout(function(){
+              business.attr('id',stop);
+              offset = 440;
+              beltOn = true;
+              continueAnimation();
+            },3000);
+          }
+        }else if( offset >= 1000){
+          setTimeout(animateBusiness,2000);
         }
-      }else if( offset >= 1000){
-        setTimeout(animateBusiness,2000);
-      }
-    })();
-  });
-}
-
+      })();
+    });
+  }
 
   window.beltOn = true;
   window.houseOn = true;
@@ -103,12 +102,13 @@ var Innovatis = Innovatis || {};
 
   form.validate = function(){
     var element = $(this),
-    required    = element.attr('required'),
     val         = $.trim(element.val()),
     inputDiv    = element.closest('.input'),
+    required    = /* element.is('[required]') */ inputDiv.hasClass('required'), /* fallback for ie bug */
+    empty       = val === "",
     type        = element.attr("type");
 
-    if(required && val === ''){
+    if(required && empty){
       inputDiv.addClass("error");
     }else{
       inputDiv.removeClass("error");
@@ -132,15 +132,18 @@ $(function(){
   $('#contact_us_now').click(function(){
     $('#contact').stop().slideDown(1000,function(){
       $(window).scrollTo($('#contact'),1000,{axis: 'y'});
+      $('.input cite').fadeIn();
     });
     return false;
   },function(){
+    $('.input cite').fadeOut('fast');
     $(window).scrollTo(0,1000);
     $('#contact').stop().fadeOut(1100);
     return false;
   });
 
   $('#form-close').click(function(){
+    $('.input cite').fadeOut('fast');
     $(window).scrollTo(0,1000);
     $('#contact').stop().slideUp(1100);
     return false;
@@ -152,7 +155,8 @@ $(function(){
   $('#contact-form').submit(function(e){
     var element = $(this);
     if(Innovatis.form.validateAll()){
-      $('.form,.actions').fadeOut();
+      $('.form').fadeOut();
+      $('.actions').hide();
       $.post(Innovatis.form.mailPath,element.serialize(), function(){
       });
     }

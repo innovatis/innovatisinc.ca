@@ -1,0 +1,20 @@
+#contact .form .input cite{
+  margin-top:   2px;
+  font-style: normal;
+}
+
+#contact .form .error.input cite{
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3d73', endColorstr='#881133');
+}
+
+.column{
+  -display: inline;
+}
+
+#contact .form .input{
+  -padding-right: 10px;
+}
+
+#left-shadow, #right-shadow, #machine, #footer-logo,#form-close, #contact_us_now, #submit_form{
+  behavior: url(/css/iepngfix.htc);
+}

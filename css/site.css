@@ -342,8 +342,8 @@ h4{
   width:192px;
   padding:16px 0 20px 30px;
   border-bottom: 1px solid rgba(0,0,0,.3);
-  border-top:1px solid rgba(255,255,255,.1);
-  background:rgba(0,0,0,.1);
+  border-top: 1px solid rgba(255,255,255,.1);
+  background: rgba(0,0,0,.1);
 }
 #contact #contact-info {
     padding-left:32px;
@@ -358,7 +358,7 @@ h4{
 #contact .info ul{
   list-style: none;
   margin-top: 20px;
-  padding-left:0;  
+  padding-left:0;
   font-family:'Lucida Grande', arial, helvetica, sans-serif;
   font-size:12px;
   color: #abafab;
@@ -386,42 +386,47 @@ h4{
 #contact .form{
   width: 550px;
   float: left;
+  -display: inline;
   padding: 0px;
   margin-top: -5px;
 }
 #contact .form .input{
   float: left;
+  -display: inline;
   height: 70px;
   width: 250px;
   padding-right: 25px;
   margin-bottom:18px;
 }
 #contact .form .input cite{
-  float: right;
   font-size:11px;
   margin-top:6px;
   color: rgba(0,0,0,.8);
   padding:2px 9px;
   background:#5c5e61;
-  -moz-border-radius-topleft:4px;
-  -moz-border-radius-topright:4px;
-  -webkit-border-top-left-radius:4px;
-  -webkit-border-top-left-radius:4px;
-  border-top-left-radius:4px;
-  border-top-right-radius:4px;
-  position: relative;
-  margin-top: 4px;
+  -moz-border-radius-topleft:     4px;
+  -moz-border-radius-topright:    4px;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius:         4px;
+  border-top-right-radius:        4px;
+  position: absolute;
   color: black;
+  display: none;
+  margin-top:    4px;
+  margin-left: 130px;
 }
 #contact .form .error.input cite{
   color: white;
   background:#ff3d73;
   background: -moz-linear-gradient(top, #ff3d73, #881133);
   background: -webkit-gradient(linear, left top, left bottom, from(#ff3d73), to(#881133));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3d73', endColorstr='#881133');
 }
 #contact .form .input cite.error{
   display: none;
+}
+#fancy_holder{
+  height: 700px;
 }
 #contact .form .error.input cite.error{
   display: block
@@ -453,6 +458,14 @@ h4{
   color: #76797a;
   padding: 3px 5px;
 }
+
+#submit_form{
+  text-indent: -999em;
+  font-size: 0;
+  display:block;
+  line-height: 0;
+}
+
 #contact .form form .input.error input{
   border: 1px solid #881133;
 }
@@ -540,6 +553,7 @@ h4{
 }
 #footer ul#form-address {
   margin:20px 0 0 0;
+  padding: 0px;
   font-size:15px;
 }
 #footer ul li{
@@ -547,7 +561,7 @@ h4{
 }
 
 #footer ul#form-address li{
-  color:#848f84;  
+  color: #848f84;
 }
 #footer .info{
   color: #677067;
