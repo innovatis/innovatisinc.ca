@@ -7,6 +7,16 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3d73', endColorstr='#881133');
 }
 
+#contact .info .person {
+  border-top:     1px solid #4E5153;
+  border-bottom:  1px solid #242426;
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#1A1B1C50,endColorstr=#1A1B1C50);
+  zoom: 1;
+}
+#contact .info .person cite{
+  font-style: normal; /* font rendering blows in IE*/
+}
 .column{
   -display: inline;
 }
