@@ -198,7 +198,7 @@ h2{
   display: block;
   border:none;
   float: right;
-  margin: 25px 145px 0px 0px;
+  margin: 25px 35px 0px 0px;
 }
 #contact #submit_form:hover {
   background-position: 0px -35px;
@@ -578,4 +578,162 @@ h4{
 .organization{
   margin-left: 30px;
 }
+
+
+
+
+/*ASDFASDFASDFA*/
+@import url("reset.css");
+@import url("core.css");
+
+/*TEXT*/
+
+h1,h2,h3,h4,h5,h6 {
+    font-family:'Hevletica Neue', 'Myriad Pro', Helvetica, Arial, sans-serif;
+    font-weight:600px;
+    line-height:1em;
+    margin-bottom:.2em;
+}
+h1 {color:rgb(16,96,205);font-size:1.6em;}
+h2 {font-size:1.4em;}
+h3 {font-size:1.2em;}
+h4 {font-size:1em;}
+h5 {font-size:.8em;}
+h6 {font-size:.6em;}
+
+p {
+    font-family:'Hevletica Neue', 'Myriad Pro', Helvetica, Arial, sans-serif;
+    margin:0 0 15px 0;
+    line-height:1.5em;
+    font-size:1em;
+    color:rgb(65,65,65);
+}
+em {
+    font-style:italic;
+    font-weight:400;
+    color:#aaa;
+    line-height:1em;
+    float:right;
+}
+
+/*BUTTONS*/
+
+a.button {
+    font-family:'Hevletica Neue', 'Myriad Pro', Helvetica, Arial, sans-serif;
+    float:left;
+    display: block;
+    padding: .6em 2em .5em 2em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    font-weight:700;
+    text-decoration:none;
+    line-height:1em;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    cursor:pointer;
+}
+        a.button:hover {
+        }
+        a.button:active {
+            -webkit-box-shadow: 0 0px 1px rgba(0,0,0,.1);
+            -moz-box-shadow: 0 0 1px rgba(0,0,0,.1);
+            box-shadow: 0 0 1px rgba(0,0,0,.1);
+        }
+
+#contact .form .white {
+    color:rgb(95,95,95);
+    text-shadow:0 1px rgba(255,255,255,.4);
+    border-left:1px solid rgb(255,255,255);
+    border-top:1px solid rgb(255,255,255);
+    border-right:1px solid rgba(0,0,0,.1);
+    border-bottom:1px solid rgba(0,0,0,.1);
+    background:rgb(245,245,245);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(250,250,250)),color-stop(1, rgb(240,240,240)));
+    background: -moz-linear-gradient(top, rgb(250,250,250), rgb(240,240,240));
+}
+#contact .form .white:hover {
+    background:rgb(232,232,232);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(232,232,232)),color-stop(1, rgb(250,250,250)));
+    background: -moz-linear-gradient(top, rgb(240,240,240), rgb(250,250,250));
+}
+
+/*BOXES*/
+
+#contact div.box {
+    padding:25px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    color:rgb(95,95,95);
+    text-shadow:0 1px rgba(255,255,255.4);
+    float:left;
+}
+
+/*MESSAGES*/
+
+
+#contact .form div.messages {padding-left:140px;	max-width:420px;}
+#contact div.messages h1 {color:rgb(16,96,205);}
+#contact div.messages p {margin:0 0 5px 0;line-height:1.2em;}
+		
+#contact div.form {
+  position: relative;
+}
+
+#contact div.messages {
+  position: absolute;
+	max-width:360px;
+	background: transparent;
+	padding: 90px 25px 25px 100px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	color:rgb(95,95,95);
+	text-shadow:0 1px rgba(255,255,255.4);
+}
+#contact div.messages h1 {
+	font-size:2em;
+	line-height:1em;
+	color:#fff;
+	margin-bottom:12px;
+	text-shadow:0 1px 3px rgb(0,0,0);
+}
+#contact div.messages p {
+	margin:5px 0 3px 0;
+	font-size:1em;
+	line-height:1.25em;
+	color:#888;
+	font-weight:300;
+}
+#contact div.messages h2 {
+	font-size:1.2em;
+	line-height:1em;
+	font-weight:600;
+  margin: 0;
+  text-shadow: none;
+	color:#aaa;
+}
+#contact div.messages a.button {
+	float:right;
+	margin-top:20px;
+}        
+
+#form_spinner {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  background: url(../images/ajax-loader.gif?) center center no-repeat;
+  height: 380px;
+  width: 600px;
+}
+
+#contact .box.error {padding-left:110px;background: transparent url(../images/error.png) 16px 90px no-repeat;}
+#contact .box.success {padding-left:110px;background: transparent url(../images/success.png) 16px 90px no-repeat;}
+
+
 

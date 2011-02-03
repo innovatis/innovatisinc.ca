@@ -89,8 +89,20 @@
         </div>
       </div>
       <div class="form">
-        <h2> How can we help?</h2>
+        <div id="form_spinner" style="display:none;"></div>
+        <div id="form_failure" class="box messages error" style="display:none;">
+          <h1>Yikes! Lets try that again.</h1>
+          <h2>Delivery of your information has failed.</h2>
+          <p>Unfortunately you information was not sent to us. Please try again, if you continue to experience problems give us a call at 204-926-8548</p>
+          <a id='try-again' class="button white" href="#">Try Again</a>
+        </div>
+        <div id="form_success" class="box messages success" style="display:none;">
+          <h1>Well Done.</h1>
+          <h2>Your information has been sent successfully.</h2>
+          <p>We will contact you soon paragraph can go here. </p>
+        </div>
         <form id="contact-form" novalidate>
+          <h2> How can we help?</h2>
           <div class="inputs">
             <div class="input string required">
               <cite class="normal">required</cite>
@@ -102,7 +114,6 @@
               <label for="company">Company</label>
               <input name="company" placeholder="Company Co."/>
             </div>
-          </div>
             <div class="input string required">
               <cite class="normal">required</cite>
               <cite class="error">Must not be left blank</cite>

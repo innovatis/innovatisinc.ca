@@ -152,15 +152,34 @@ $(function(){
     return false;
   });
 
+  $('#try-again').click(function() {
+    $('#contact-form').fadeIn();
+    $('.actions').show();
+    $('#form_failure').fadeOut();
+    return false;
+  });
+
   animateBelt();
   animateBusiness();
 
   $('#contact-form').submit(function(e){
     var element = $(this);
     if(Innovatis.form.validateAll()){
-      $('.form').fadeOut();
+      $('#contact-form').fadeOut();
       $('.actions').hide();
-      $.post(Innovatis.form.mailPath,element.serialize(), function(){
+      $("#form_spinner").fadeIn(100);
+      $.ajax({
+        type: 'POST',
+        url: Innovatis.form.mailPath,
+        data: element.serialize(),
+        success: function(data) {
+          $("#form_spinner").fadeOut();
+          $("#form_success").fadeIn();
+        },
+        failure: function(data) {
+          $("#form_spinner").fadeOut();
+          $("#form_failure").fadeIn();
+        }
       });
     }
 
