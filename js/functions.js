@@ -95,33 +95,6 @@ function throb(max,fcn){
 
 var Innovatis = Innovatis || {};
 
-(function(){
-
-  Innovatis.form = form = {};
-  form.mailPath = '/_strobe/proxy/empty-water-430.heroku.com/mail';
-
-  form.validate = function(){
-    var element = $(this),
-    val         = $.trim(element.val()),
-    inputDiv    = element.closest('.input'),
-    required    = /* element.is('[required]') */ inputDiv.hasClass('required'), /* fallback for ie bug */
-    empty       = val === "",
-    type        = element.attr("type");
-
-    if(required && empty){
-      inputDiv.addClass("error");
-    }else{
-      inputDiv.removeClass("error");
-    }
-  };
-
-  form.validateAll = function(){
-    $("input,textarea").each(form.validate);
-    return $(".input.error").length < 1;
-  };
-
-})();
-
 $(function(){
 
   setTimeout(function(){
@@ -162,28 +135,25 @@ $(function(){
   animateBelt();
   animateBusiness();
 
-  $('#contact-form').submit(function(e){
-    var element = $(this);
-    if(Innovatis.form.validateAll()){
-      $('#contact-form').fadeOut();
-      $('.actions').hide();
-      $("#form_spinner").fadeIn(100);
-      $.ajax({
-        type: 'POST',
-        url: Innovatis.form.mailPath,
-        data: element.serialize(),
-        success: function(data) {
-          $("#form_spinner").fadeOut();
-          $("#form_success").fadeIn();
-        },
-        failure: function(data) {
-          $("#form_spinner").fadeOut();
-          $("#form_failure").fadeIn();
-        }
-      });
-    }
+  var form = $('[data-mailform]');
 
-    return false;
+  form.find('input').live('keyup',function(){
+    form.validateForm()
+    $(this).validateForm()
   });
-  $('#contact-form input').keyup(Innovatis.form.validate);
+
+  form.live('submit',function(e){
+    var form = $(this);
+
+    if(form.validateForm()){
+      $('#contact-form').fadeOut();
+      $('#form_failure').fadeOut();
+      // form is valid
+    }else{
+      // skip normal behaviour
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    $('.actions').fadeIn();
+    }
+  });
 });

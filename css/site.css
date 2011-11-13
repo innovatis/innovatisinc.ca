@@ -641,7 +641,7 @@ a.button {
 /*MESSAGES*/
 
 
-#contact .form div.messages {padding-left:140px;	max-width:420px;}
+#contact .form div.messages {padding-left:140px;	max-width:420px;min-height:200px}
 #contact div.messages h1 {color:rgb(16,96,205);}
 #contact div.messages p {margin:0 0 5px 0;line-height:1.2em;}
 		

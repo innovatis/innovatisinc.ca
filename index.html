@@ -12,7 +12,7 @@
       <script type="text/javascript" src="js/iepngfix_tilebg.js"></script>
       <link href='css/ie.css'       media='screen' rel='stylesheet' type='text/css' />
     <![endif]-->
-    <script type="text/javascript"  src="js/jquery.min.js"></script>
+    <script type="text/javascript"  src="http://innomailer.herokuapp.com/0.0.1/js/all.js"></script>
     <script type="text/javascript"  src="js/jquery.scrollTo-min.js"></script>
     <script type="text/javascript"  src="js/functions.js"></script>
   </head>
@@ -80,18 +80,22 @@
       </div>
       <div class="form">
         <div id="form_spinner" style="display:none;"></div>
-        <div id="form_failure" class="box messages error" style="display:none;">
+        <div id="form_failure" class="box messages error " style="display:none;">
           <h1>Yikes! Lets try that again.</h1>
           <h2>Delivery of your information has failed.</h2>
-          <p>Unfortunately you information was not sent to us. Please try again, if you continue to experience problems give us a call at 204-272-6037</p>
+          <p class="message">Unfortunately you information was not sent to us. Please try again, if you continue to experience problems give us a call at 204-272-6037</p>
           <a id='try-again' class="button white" href="#">Try Again</a>
         </div>
         <div id="form_success" class="box messages success" style="display:none;">
           <h1>Well Done.</h1>
           <h2>Your information has been sent successfully.</h2>
-          <p>We will contact you soon paragraph can go here. </p>
+          <p>We will contact you soon. </p>
         </div>
-        <form id="contact-form" novalidate>
+        <form id="contact-form"
+          data-mailform-success="#form_success"
+          data-mailform-error="#form_failure"
+          data-mailform-loading="#form_spinner"
+          data-mailform="3b3dd78604f7e335916a8af55c4994a4b614e423" novalidate>
           <h2> How can we help?</h2>
           <div class="inputs">
             <div class="input string required">
